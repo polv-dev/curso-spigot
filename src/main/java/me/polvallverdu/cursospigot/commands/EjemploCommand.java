@@ -1,20 +1,30 @@
 package me.polvallverdu.cursospigot.commands;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.TextDecoration;
+import org.bukkit.Bukkit;
+import org.bukkit.boss.BarColor;
+import org.bukkit.boss.BarStyle;
+import org.bukkit.boss.BossBar;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
-
-import java.time.Duration;
 
 
 public class EjemploCommand implements CommandExecutor {
 
+    private BossBar bossBar;
+
+    public EjemploCommand() {
+        bossBar = Bukkit.createBossBar("Visita polv.dev", BarColor.WHITE, BarStyle.SOLID);
+        bossBar.setVisible(true);
+    }
+
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        sender.sendActionBar(Component.text("Este texto aparece en el actionbar").decorate(TextDecoration.BOLD));
+        if (sender instanceof Player player) {
+            bossBar.addPlayer(player);
+        }
 
         return true;
     }
