@@ -1,0 +1,13 @@
+name: CursoSpigot
+version: '${version}'
+main: me.polvallverdu.cursospigot.CursoSpigot
+api-version: '1.20'
+author: Pol
+website: polv.dev
+
+commands:
+  ejemplo:
+    description: Comando para saludar
+    aliases:
+      - hola
+    usage: "Usage: /ejemplo [nombre]"
