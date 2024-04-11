@@ -9,15 +9,4 @@ import org.bukkit.event.player.PlayerInteractEvent;
 
 public class PlayerListener implements Listener {
 
-    @EventHandler
-    public void onPlayerInteract(PlayerInteractEvent event) {
-        Player player = event.getPlayer();
-
-        if (event.hasItem() && event.getItem().getType() == Material.DIAMOND_HOE) {
-            Arrow arrow = player.launchProjectile(Arrow.class);
-
-            arrow.setDamage(4D);
-        }
-    }
-
 }

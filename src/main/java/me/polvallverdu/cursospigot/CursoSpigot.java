@@ -8,8 +8,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class CursoSpigot extends JavaPlugin {
 
+    private static CursoSpigot instance;
+
     @Override
     public void onEnable() {
+        instance = this;
+
         WorldCreator worldCreator = new WorldCreator("curso");
         worldCreator.generateStructures(false);
         World world = Bukkit.createWorld(worldCreator);
@@ -26,4 +30,7 @@ public final class CursoSpigot extends JavaPlugin {
         System.out.println("El plugin se ha deshabilitado :(");
     }
 
+    public static CursoSpigot getInstance() {
+        return instance;
+    }
 }
