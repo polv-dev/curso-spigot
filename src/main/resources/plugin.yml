@@ -5,6 +5,9 @@ api-version: '1.20'
 author: Pol
 website: polv.dev
 
+depend:
+  - ProtocolLib
+
 commands:
   ejemplo:
     description: Comando para saludar
