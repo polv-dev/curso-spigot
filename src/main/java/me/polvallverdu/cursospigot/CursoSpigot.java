@@ -18,6 +18,9 @@ public final class CursoSpigot extends JavaPlugin {
         worldCreator.generateStructures(false);
         World world = Bukkit.createWorld(worldCreator);
 
+        getConfig().options().copyDefaults();
+        saveDefaultConfig();
+
         getCommand("ejemplo").setExecutor(new EjemploCommand());
 
         Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
