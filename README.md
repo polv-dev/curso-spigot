@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T3VTGE4)
+
 # Curso Spigot
 
 Bienvenido al curso para aprender a crear plugins de Minecraft. Aquí está el código a partir del episodio 9. Simplemente buscalo en las branches:
