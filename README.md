@@ -20,3 +20,7 @@ Bienvenido al curso para aprender a crear plugins de Minecraft. Aquí está el c
 - [18 Send Packets](https://github.com/polv-dev/curso-spigot/tree/18-send-packets)
 - [19 Config](https://github.com/polv-dev/curso-spigot/tree/19-config)
 - [20 Holograma](https://github.com/polv-dev/curso-spigot/tree/20-holograma)
+
+## Curso completo
+
+[![Miniatura Curso](https://i.ytimg.com/vi/PKwPS_KHkjU/maxresdefault.jpg)](https://www.youtube.com/watch?v=PKwPS_KHkjU&list=PLhaUVX9fqdCbDmZMz-6FNCfJq0jWKFVoY&index=1)
